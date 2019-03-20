@@ -53,3 +53,21 @@ Comentarios: elementos omitidos por el compilador a la hora de transformar el c�
 Persona persona1 = new Persona();
   ```
 
+  
+2. Transformación de tipos de datos utilizando __Casting__
+```java
+ float(), double(), int(), +
+```
+
+| Método        | Descripción           | Ejemplo
+| ------------- |:-------------:| :-------------:|
+| double()        | Conversión a número real  | float(12) --> 12.0
+| int()        | Conversión a número entero  | int(12.4) --> 12
+| +        | Conversión a hilera de caracteres | "" + 12 --> "12"
+
+* Conversión de String a números:
+
+| Método        | Descripción           | Ejemplo
+| ------------- |:-------------:| :-------------:|
+| Double.parseDouble(hilera)        | Conversión a número real  | Double.parseDouble("12.4") --> 12.4
+| Integer.parseInt(hilera)        | Conversión a número entero  | Integer.parseInt("15") --> 15
