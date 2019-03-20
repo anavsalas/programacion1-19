@@ -10,12 +10,12 @@ Ejemplos tomados del código fuente generado en las distintas lecciones.
 Comentarios: elementos omitidos por el compilador a la hora de transformar el código fuente en código binario/ejecutable. Utilizado por el programador para comprender mejor qué se está codificando
 
 ```java
-	// Esto es un comentario de una línea debe iniciar con (//), toda la línea es omitida
+// Esto es un comentario de una línea debe iniciar con (//), toda la línea es omitida
 
-	/* 	Esto es un comentario
-		de varias líneas se note los delimitadores utilizados al inicio
-		y final 
-	*/
+/* Esto es un comentario
+  de varias líneas se note los delimitadores utilizados al inicio
+  y final 
+*/
 ```
 
 1. Creación de objetos
@@ -49,7 +49,7 @@ Comentarios: elementos omitidos por el compilador a la hora de transformar el c�
 
   * Generación de instancias (declaración e inicialización de objetos o tipos no primitivos)
   ```java
-  	// NombreDeClase nombreInstancia = new NombreClase();
-	Persona persona1 = new Persona();
+// NombreDeClase nombreInstancia = new NombreClase();
+Persona persona1 = new Persona();
   ```
 
