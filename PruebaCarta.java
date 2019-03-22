@@ -11,5 +11,12 @@ public class PruebaCarta{
 		carta2.setPalo("Treboles");
 		carta2.setNumero(7);
 		carta2.imprimir();
+
+		String paloDeLaCarta2 = carta2.getPalo();
+		System.out.println("El palo de la carta 2 es: "+ paloDeLaCarta2);
+
+		int numeroDeLaCarta2 = carta2.getNumero();
+		System.out.println("El numero de la carta 2 es: "+ (numeroDeLaCarta2+1));
+
 	}
 }

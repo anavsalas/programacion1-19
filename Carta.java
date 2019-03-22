@@ -17,6 +17,15 @@ public class Carta{
 		numero = numeroParametro;
 	}
 
+	public int getNumero(){
+		return this.numero;
+	}
+
+	public String getPalo(){
+		return this.palo;
+	}
+
+
 	public void imprimir(){
 		String contenido = "La carta es:\n";
 		contenido = contenido +"\t"+ numero + " de " + palo + "\n";
