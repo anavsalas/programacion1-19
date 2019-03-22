@@ -9,7 +9,6 @@ public class Carta{
 	//2. Que quiero que retorne el metodo
 	//3. Como se llama el método
 	//4. Que necesito que reciba el método para funcionar
-
 	public void setPalo(String paloParametro){
 		palo = paloParametro;
 	}

@@ -15,9 +15,11 @@ public class Persona{
 	// El nombre del método
 	// Los parámetros (lo que necesitamos recibir para que el métood funcione)
 	public void setNombre(String nombreParametro){
-		nombre = nombreParametro;
+		this.nombre = nombreParametro; // esta línea asigna el atributo nombre
 	}
 
+	// invocacion de un método:
+	// instancia.nombreMetodo()
 	public void saludar()
 	{
 		System.out.println("Hola me llamo " + this.nombre);
@@ -38,6 +40,8 @@ public class Persona{
 		persona2.saludar();
 
 		Persona persona3 = new Persona();
+		persona3.saludar();
+		persona3.setNombre("Juan");
 		persona3.saludar();
 	}
 }
