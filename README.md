@@ -76,6 +76,7 @@ Persona persona1 = new Persona();
 ### Solicitud de datos al usuario
 
 * Consola
+
 Import necesario:
 ```java
 import java.util.Scanner;
