@@ -71,3 +71,27 @@ Persona persona1 = new Persona();
 | ------------- |:-------------:| :-------------:|
 | Double.parseDouble(hilera)        | Conversión a número real  | Double.parseDouble("12.4") --> 12.4
 | Integer.parseInt(hilera)        | Conversión a número entero  | Integer.parseInt("15") --> 15
+
+3. Solicitud de datos al usuario
+
+3.1 Consola
+Import necesario:
+```java
+import java.util.Scanner;
+```
+Ejemplo:
+```java
+Scanner scanner = new Scanner(System.in);
+System.out.println("Digite su nombre: ");
+String nombre = scanner.nextLine();
+```
+3.2 JOptionPane (utilizando una ventana emergente:
+
+Import necesario:
+```java
+import javax.swing.JOptionPane;
+```
+Ejemplo:
+```java
+String nombre = JOptionPane.showInputDialog("Digite su nombre");
+```
