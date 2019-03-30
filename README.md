@@ -7,7 +7,8 @@
 ## Material visto en clase
 Ejemplos tomados del código fuente generado en las distintas lecciones.
 
-Comentarios: elementos omitidos por el compilador a la hora de transformar el código fuente en código binario/ejecutable. Utilizado por el programador para comprender mejor qué se está codificando
+### Comentarios
+Elementos omitidos por el compilador a la hora de transformar el código fuente en código binario/ejecutable. Utilizado por el programador para comprender mejor qué se está codificando
 
 ```java
 // Esto es un comentario de una línea debe iniciar con (//), toda la línea es omitida
@@ -18,7 +19,7 @@ Comentarios: elementos omitidos por el compilador a la hora de transformar el c�
 */
 ```
 
-1. Creación de objetos
+### Creación de objetos
   * Creación de clases (class)
   ```java
   public class Carta //Declaración de una clase, usando las palabra resevadas public class
@@ -54,7 +55,7 @@ Persona persona1 = new Persona();
   ```
 
   
-2. Transformación de tipos de datos utilizando __Casting__
+### Transformación de tipos de datos utilizando __Casting__
 ```java
  float(), double(), int(), +
 ```
@@ -72,9 +73,9 @@ Persona persona1 = new Persona();
 | Double.parseDouble(hilera)        | Conversión a número real  | Double.parseDouble("12.4") --> 12.4
 | Integer.parseInt(hilera)        | Conversión a número entero  | Integer.parseInt("15") --> 15
 
-3. Solicitud de datos al usuario
+### Solicitud de datos al usuario
 
-3.1 Consola
+* Consola
 Import necesario:
 ```java
 import java.util.Scanner;
@@ -85,7 +86,7 @@ Scanner scanner = new Scanner(System.in);
 System.out.println("Digite su nombre: ");
 String nombre = scanner.nextLine();
 ```
-3.2 JOptionPane (utilizando una ventana emergente:
+* JOptionPane (utilizando una ventana emergente:
 
 Import necesario:
 ```java
