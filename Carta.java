@@ -4,6 +4,17 @@ public class Carta{
 	private int numero; // un atributo de tipo entero que contiene el numero
 
 
+	public Carta() {
+		palo = "Diamantes";
+		numero = 3;
+	}
+
+	public Carta(int numero, String palo){
+		this.numero = numero;
+		this.palo = palo;
+	}
+
+
 	//Declaracion de un método:
 	//1. Si es publico o privado (accesible desde la instancia)
 	//2. Que quiero que retorne el metodo

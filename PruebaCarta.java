@@ -18,5 +18,9 @@ public class PruebaCarta{
 		int numeroDeLaCarta2 = carta2.getNumero();
 		System.out.println("El numero de la carta 2 es: "+ (numeroDeLaCarta2+1));
 
+
+		Carta carta3 = new Carta(10,"Espadas");
+		carta3.imprimir();
+
 	}
 }
