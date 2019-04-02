@@ -97,3 +97,97 @@ Ejemplo:
 ```java
 String nombre = JOptionPane.showInputDialog("Digite su nombre");
 ```
+
+### Manejo de excepciones
+
+Uso de los bloques try{...}catch(Exception e){...}
+
+```java
+try{
+  // código propenso a fallos
+}
+catch (Exception e) 
+{
+  // acción a tomar si se encuentra un error.
+}
+```
+
+Ejemplo con dos bloques catch:
+
+```java
+int valor = 0;
+String numeroHilera =  JOptionPane.showInputDialog (“Digite un número”);
+try{
+   valor = Integer.parseInt (numeroHilera);
+}
+catch (NumberFormatException e){
+   System.out.println (“El valor digitado no es un número.”);
+}
+catch (Exception e){
+   System.out.println (“Ocurrió un error inesperado.”);
+}
+```
+
+Note que se codifica primero el bloque con la excepción más específica `NumberFormatException` y luego el bloque con la excepción general en este caso.
+
+Èjemplo visto en clase:
+```java
+public int convertirStringAInt(String valor){
+	int numero = 0;
+	try{
+		numero = Integer.parseInt(valor);
+	}
+	catch(NumberFormatException e){
+		System.out.println("Ocurrio un error al convertir: " + valor);
+	}
+	return numero;
+}
+```
+
+### Sobrecarga de métodos y constructores
+
+La firma de un método está compuesta por su nombre y los tipos de datos de los parámetros que recibe (en orden).
+
+La sobrecarga consiste en tener métodos con el mismo nombre pero con distintos parámetros. Java utiliza la cantidad de parámetros, junto con sus tipos para determinar cuál es el método correcto que debe ser invocado.
+
+De igual forma, en Java se pueden sobrecargar los constructores de una clase (permitiendo tener varios). Esto se llama sobrecarga de constructores.
+
+Ejemplos vistos en clase:
+
+Sobrecarga de métodos (clase Calculadora.java)
+```java
+	public int sumar(int valor1, int valor2){
+		return valor1 + valor2;
+	}
+
+	public int sumar(int valor1, int valor2, int valor3){
+		return valor1 + valor2 + valor3;
+	}
+
+	public double sumar(double v1, double v2){
+		double resultado = v1+ v2;
+		return resultado;
+	}
+
+	public double sumar(int v1, double v2){
+		return v1 + v2;
+	}
+
+	public double sumar(double v1, int v2){
+		return v1 + v2;
+	}
+```
+
+Sobrecarga de constructores (clase Carta.java)
+
+```java
+	public Carta() {
+		palo = "Diamantes";
+		numero = 3;
+	}
+
+	public Carta(int numero, String palo){
+		this.numero = numero;
+		this.palo = palo;
+	}
+```
