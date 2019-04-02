@@ -27,25 +27,25 @@ Elementos omitidos por el compilador a la hora de transformar el código fuente 
   
   * Creación de variables de instancia o atributos de clase
   ```java
-	// Atributos
+   // Atributos
 
-	// Para definir un tipo de dato:
-	// Declaramos el valor privado
-	// Definimos qué tipo de dato es
-	// Damos un nombre a la variable
-	private String nombre;
+   // Para definir un tipo de dato:
+   // Declaramos el valor privado
+   // Definimos qué tipo de dato es
+   // Damos un nombre a la variable
+   private String nombre;
   ```
   * Creación de métodos de un objeto
   ```java
-	// Métodos
-	// Acciones o métodos:
-	// método publico o privado
-	// lo que esperamos que retorne el método
-	// El nombre del método
-	// Los parámetros (lo que necesitamos recibir para que el método funcione)
-	public void setNombre(String nombreParametro){
-		nombre = nombreParametro;
-	}
+   // Métodos
+   // Acciones o métodos:
+   // método publico o privado
+   // lo que esperamos que retorne el método
+   // El nombre del método
+   // Los parámetros (lo que necesitamos recibir para que el método funcione)
+   public void setNombre(String nombreParametro){
+      nombre = nombreParametro;
+   }
   ```
 
   * Generación de instancias (declaración e inicialización de objetos o tipos no primitivos)
@@ -133,14 +133,14 @@ Note que se codifica primero el bloque con la excepción más específica `Numbe
 Èjemplo visto en clase:
 ```java
 public int convertirStringAInt(String valor){
-	int numero = 0;
-	try{
-		numero = Integer.parseInt(valor);
-	}
-	catch(NumberFormatException e){
-		System.out.println("Ocurrio un error al convertir: " + valor);
-	}
-	return numero;
+   int numero = 0;
+   try{
+      numero = Integer.parseInt(valor);
+   }
+   catch(NumberFormatException e){
+      System.out.println("Ocurrio un error al convertir: " + valor);
+   }
+   return numero;
 }
 ```
 
@@ -156,38 +156,38 @@ Ejemplos vistos en clase:
 
 Sobrecarga de métodos (clase Calculadora.java)
 ```java
-	public int sumar(int valor1, int valor2){
-		return valor1 + valor2;
-	}
+public int sumar(int valor1, int valor2){
+   return valor1 + valor2;
+}
 
-	public int sumar(int valor1, int valor2, int valor3){
-		return valor1 + valor2 + valor3;
-	}
+public int sumar(int valor1, int valor2, int valor3){
+   return valor1 + valor2 + valor3;
+}
 
-	public double sumar(double v1, double v2){
-		double resultado = v1+ v2;
-		return resultado;
-	}
+public double sumar(double v1, double v2){
+   double resultado = v1+ v2;
+   return resultado;
+}
 
-	public double sumar(int v1, double v2){
-		return v1 + v2;
-	}
+public double sumar(int v1, double v2){
+   return v1 + v2;
+}
 
-	public double sumar(double v1, int v2){
-		return v1 + v2;
-	}
+public double sumar(double v1, int v2){
+   return v1 + v2;
+}
 ```
 
 Sobrecarga de constructores (clase Carta.java)
 
 ```java
-	public Carta() {
-		palo = "Diamantes";
-		numero = 3;
-	}
+public Carta() {
+   palo = "Diamantes";
+   numero = 3;
+}
 
-	public Carta(int numero, String palo){
-		this.numero = numero;
-		this.palo = palo;
-	}
+public Carta(int numero, String palo){
+   this.numero = numero;
+   this.palo = palo;
+}
 ```
