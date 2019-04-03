@@ -22,5 +22,13 @@ public class PruebaCarta{
 		Carta carta3 = new Carta(10,"Espadas");
 		carta3.imprimir();
 
+		Carta carta4 = new Carta(11,"Espadas");
+		carta4.imprimir();
+		carta4.imprimirIf();
+
+		Carta carta5 = new Carta(7,"Espadas");
+		carta5.imprimir();
+		carta5.imprimirIf();
+
 	}
 }
