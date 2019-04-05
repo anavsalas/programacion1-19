@@ -72,24 +72,29 @@ public class Carta{
    }
 
    public String convertirNumeroCartaIf(){
-      String valorCarta = "";
-      if (numero == 1){
-         valorCarta = "As";
-      }
-      else if (numero == 11){
+   String valorCarta = "";
+   if (numero == 1){
+      valorCarta = "As";
+   }
+   else {
+      if (numero == 11){
          valorCarta = "J";
       }
-      else if (numero == 12){
-         valorCarta = "Q";
-      }
-      else if (numero == 13){
-         valorCarta = "K";
-      }
       else{
-         valorCarta += numero;
-      }
-      return valorCarta;
-      
+         if (numero == 12){
+            valorCarta = "Q";
+         }
+         else{
+            if (numero == 13){
+               valorCarta = "K";
+            }
+            else{
+               valorCarta += numero;
+            }   
+         } 
+      } 
    }
+   return valorCarta;
+}
 
 }

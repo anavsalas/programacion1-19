@@ -192,7 +192,25 @@ public Carta(int numero, String palo){
 }
 ```
 
-### Estructuras de control
+### Estructuras de control (__if__, __if/else__)
+
+  * Operadores relacionales (and: __&&__, or: __||__, xor: __^__, not: __!__)
+  
+  * Operadores lógicos (__>__, __>=__,__<__,__<=__,__==__)
+  
+  * Orden precedencia:
+  
+  | Orden        | Tipo           | Operador|
+  | ------------- |:-------------:| :-------------:|
+  |1|Posfijos |( )|
+  |2|Multiplicativos |*, /, %, //|
+  |3|Aditivos |+,-|
+  |4|Relacionales |>, <, <=, >=|
+  |5|Igualdad |==|
+  |6|AND | and|
+  |7|OR | or|
+  |8|Asignación |=, +=, -=, *=, /=,%= …|
+
 
 #### Estructura if 
 
