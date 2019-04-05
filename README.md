@@ -191,3 +191,64 @@ public Carta(int numero, String palo){
    this.palo = palo;
 }
 ```
+
+### Estructuras de control
+
+#### Estructura if 
+
+Ejemplo tomado de la clase carta, convierte un número entero que representa una carta en una hilera de caracters con su respectivo valor.
+```java
+public String convertirNumeroCartaIf(){
+   String valorCarta = "";
+   if (numero == 1){
+      valorCarta = "As";
+   }
+   else {
+      if (numero == 11){
+         valorCarta = "J";
+      }
+      else{
+         if (numero == 12){
+            valorCarta = "Q";
+         }
+         else{
+            if (numero == 13){
+               valorCarta = "K";
+            }
+            else{
+               valorCarta += numero;
+            }   
+         } 
+      } 
+   }
+   return valorCarta;
+}
+```
+
+#### Estructura switch
+
+Ejemplo anterior codificado utilizando la estructura switch
+
+```java
+// Retorne J Q K As o el numero como String
+public String convertirNumeroCarta(){
+   String valorCarta = "";
+   switch(numero){
+      case 11:
+         valorCarta = "J";
+      break;
+      case 12:
+         valorCarta = "Q";
+      break;
+      case 13:
+         valorCarta = "K";
+      break;
+      case 1:
+         valorCarta = "As";
+      break;
+      default:
+         valorCarta += this.numero;
+   }
+   return valorCarta;
+}
+```
