@@ -205,11 +205,12 @@ public Carta(int numero, String palo){
   |1|Posfijos |( )|
   |2|Multiplicativos |*, /, %, //|
   |3|Aditivos |+,-|
-  |4|Relacionales |>, <, <=, >=|
-  |5|Igualdad |==|
-  |6|AND | and|
-  |7|OR | or|
-  |8|Asignación |=, +=, -=, *=, /=,%= …|
+  |4|Unarios |x++, x--|
+  |5|Relacionales |>, <, <=, >=|
+  |6|Igualdad |==|
+  |7|AND | and|
+  |8|OR | or|
+  |9|Asignación |=, +=, -=, *=, /=,%= …|
 
 
 #### Estructura if 
