@@ -271,3 +271,58 @@ public String convertirNumeroCarta(){
    return valorCarta;
 }
 ```
+
+### Estructuras de repetición
+
+![alt text](screenshots/ciclos.jpg "Ejemplo gráfico visto en clases")
+
+### Ciclo while
+
+Ejemplo tomado de la clase Matemáticas
+
+```java
+public double calcularPromedioWhile(){
+  double suma = 0;
+  int n = 0; // iteraciones que se harán y servirá como condición de parada
+
+  while(n < 5){
+    suma += interfazUsuario.solicitarNumeroEntero("Digite un numero (while)");
+    n++; // cambio de condición
+  }
+  return suma/5;
+}
+```
+
+### Ciclo do - while
+
+Ejemplo tomado de la clase Matemáticas
+
+
+```java
+public double calcularPromedioDoWhile(){
+  double suma = 0;
+  int n = 0;
+
+  do {
+    suma += interfazUsuario.solicitarNumeroEntero("Digite un numero (do-while)");
+    n++;
+  }while(n < 5);
+  return suma/5;
+}
+```
+### Ciclo for
+
+Ejemplo tomado de la clase Matemáticas
+
+
+```java
+public double calcularPromedioFor(){
+  double suma = 0;
+
+  for (int  n = 0 ; n < 5 ; n++){
+    suma += interfazUsuario.solicitarNumeroEntero("Digite un numero (for)");
+  }
+
+  return suma /5;
+}
+```
