@@ -202,7 +202,7 @@ public Carta(int numero, String palo){
   
   | Orden        | Tipo           | Operador|
   | ------------- |:-------------:| :-------------:|
-  |1|Posfijos |( ) ++x, --x|
+  |1|Posfijos |( )|
   |2|Multiplicativos |*, /, %, //|
   |3|Aditivos |+,-|
   |4|Unarios |x++, x--|
