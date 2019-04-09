@@ -6,8 +6,6 @@ public class Matematicas{
 		interfazUsuario = new Interfaz();
 	}
 
-	
-
 	public double calcularPromedioWhile(){
 		double suma = 0;
 		int n = 0; // iteraciones que se harán y servirá como condición de parada
@@ -65,6 +63,29 @@ public class Matematicas{
 	}
 
 
+	// Restriccion 1: numero debe ser >= 2
+	// Ver si el numero es divisible utilizando el modulo (%) 
+	// Para saber si es divisible el % del numero debe ser 0
+	// Necesitamos un ciclo desde 2 hasta n-1
+	public boolean esPrimo(int numero){
+		boolean primo = true;
+		if (numero >= 2){
+			int contador = 2;
+			// Mientras que sea primo y el contador sea < que el numero
+			while(contador <= numero/2 && primo){
+				if(numero % contador == 0){
+					primo = false;
+				}
+				contador++;
+			}
+		}
+		else{
+			primo = false;
+		}
+		return primo;
+	}
+
+
 	public static void main (String args[]){
 
 		Matematicas mate = new Matematicas();
@@ -75,6 +96,10 @@ public class Matematicas{
 		System.out.println("Resultado con do-while: " + mate.calcularPromedioDoWhile());
 		System.out.println("Resultado con for: " + mate.calcularPromedioFor());
 
+		System.out.println("2 es primo: "+ mate.esPrimo(2)); 
+		System.out.println("23 es primo: "+ mate.esPrimo(23));
+		System.out.println("-2 es primo: "+ mate.esPrimo(-2));
+		System.out.println("100000 es primo: "+ mate.esPrimo(100000));
 
 	}
 
