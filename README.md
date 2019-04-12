@@ -39,7 +39,7 @@ Elementos omitidos por el compilador a la hora de transformar el código fuente 
   ```java
    //Declaracion de un método:
    //1. Si es publico o privado (accesible desde la instancia)
-   //2. Qué quiero que retorne el metodo
+   //2. Qué (tipo de dato) quiero que retorne el método  
    //3. Cómo se llama el método
    //4. Qué necesito que reciba el método para funcionar
    public void setPalo(String paloParametro){
