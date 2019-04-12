@@ -28,12 +28,17 @@ public class Persona{
       de varias líneas
    */
 
+   public String toString(){
+      return "Hola me llamo " + this.nombre;
+   }
+
 
    public static void main (String args[]){
       // NombreDeClase nombreInstancia = new NombreClase();
       Persona persona1 = new Persona();
       persona1.setNombre("María");
       persona1.saludar();
+      System.out.println(persona1);
 
       Persona persona2 = new Persona();
       persona2.setNombre("Andrés");

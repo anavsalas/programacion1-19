@@ -17,9 +17,9 @@ public class Carta{
 
    //Declaracion de un método:
    //1. Si es publico o privado (accesible desde la instancia)
-   //2. Que quiero que retorne el metodo
-   //3. Como se llama el método
-   //4. Que necesito que reciba el método para funcionar
+   //2. Qué quiero que retorne el metodo
+   //3. Cómo se llama el método
+   //4. Qué necesito que reciba el método para funcionar
    public void setPalo(String paloParametro){
       palo = paloParametro;
    }
@@ -41,6 +41,10 @@ public class Carta{
       String contenido = "La carta es:\n";
       contenido = contenido +"\t"+ convertirNumeroCarta() + " de " + palo + "\n";
       System.out.println(contenido);
+   }
+
+   public String toString(){
+      return convertirNumeroCarta() + " de " + palo;
    }
 
    public void imprimirIf(){
@@ -72,29 +76,29 @@ public class Carta{
    }
 
    public String convertirNumeroCartaIf(){
-   String valorCarta = "";
-   if (numero == 1){
-      valorCarta = "As";
-   }
-   else {
-      if (numero == 11){
-         valorCarta = "J";
+      String valorCarta = "";
+      if (numero == 1){
+         valorCarta = "As";
       }
-      else{
-         if (numero == 12){
-            valorCarta = "Q";
+      else {
+         if (numero == 11){
+            valorCarta = "J";
          }
          else{
-            if (numero == 13){
-               valorCarta = "K";
+            if (numero == 12){
+               valorCarta = "Q";
             }
             else{
-               valorCarta += numero;
-            }   
+               if (numero == 13){
+                  valorCarta = "K";
+               }
+               else{
+                  valorCarta += numero;
+               }   
+            } 
          } 
-      } 
+      }
+      return valorCarta;
    }
-   return valorCarta;
-}
 
 }
