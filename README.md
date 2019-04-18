@@ -37,14 +37,13 @@ Elementos omitidos por el compilador a la hora de transformar el código fuente 
   ```
   * Creación de métodos de un objeto
   ```java
-   // Métodos
-   // Acciones o métodos:
-   // método publico o privado
-   // lo que esperamos que retorne el método
-   // El nombre del método
-   // Los parámetros (lo que necesitamos recibir para que el método funcione)
-   public void setNombre(String nombreParametro){
-      nombre = nombreParametro;
+   //Declaracion de un método:
+   //1. Si es publico o privado (accesible desde la instancia)
+   //2. Qué (tipo de dato) quiero que retorne el método  
+   //3. Cómo se llama el método
+   //4. Qué necesito que reciba el método para funcionar
+   public void setPalo(String paloParametro){
+      palo = paloParametro;
    }
   ```
 
