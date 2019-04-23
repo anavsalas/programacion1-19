@@ -6,6 +6,25 @@ public class Matematicas{
       interfazUsuario = new Interfaz();
    }
 
+   public void calcularPi(int cantidadCalculos){
+      double resultado = 1;
+      if(cantidadCalculos == 1){
+         resultado = 4 * (1 - 1/3);
+      }
+      else {
+         for(int i = 3 ; i <= cantidadCalculos ; i+=2){
+            if(i%4 == 1){
+               resultado += (double)1/i;
+            }
+            else{
+               resultado -= (double)1/i;
+            }
+         }
+         resultado *=4;
+      }
+      System.out.println(resultado);
+   }
+
    public double calcularPromedioWhile(){
       double suma = 0;
       int n = 0; // iteraciones que se harán y servirá como condición de parada
@@ -90,9 +109,9 @@ public class Matematicas{
 
       Matematicas mate = new Matematicas();
 
-      mate.ejecucionCiclos();
+      //mate.ejecucionCiclos();
 
-      System.out.println("Resultado con while: " + mate.calcularPromedioWhile());
+    /*  System.out.println("Resultado con while: " + mate.calcularPromedioWhile());
       System.out.println("Resultado con do-while: " + mate.calcularPromedioDoWhile());
       System.out.println("Resultado con for: " + mate.calcularPromedioFor());
 
@@ -100,6 +119,8 @@ public class Matematicas{
       System.out.println("23 es primo: "+ mate.esPrimo(23));
       System.out.println("-2 es primo: "+ mate.esPrimo(-2));
       System.out.println("100000 es primo: "+ mate.esPrimo(100000));
+*/
+      mate.calcularPi(1001);
 
    }
 

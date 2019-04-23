@@ -18,6 +18,21 @@ public class Mazo{
 		} 
 	}
 
+	public void revolver(){
+		for (int  i = 0 ; i  < cartas.length; i++){
+			int aleatorio = (int)(Math.random()*52); //[0,51]
+			intercambiarValores(cartas,i,aleatorio);
+		}
+	}
+
+	private void intercambiarValores(Carta [] arregloReferencia, int indice1, int indice2){
+		if (indice1 >=0 && indice2 >= 0 && indice1 < arregloReferencia.length && indice2 < arregloReferencia.length){
+			Carta temporal = arregloReferencia[indice1];
+			arregloReferencia[indice1] = arregloReferencia[indice2];
+			arregloReferencia[indice2] = temporal;	
+		}
+	}
+
 	public void imprimir(){
 		for(int i = 0 ; i< this.cartas.length; i++){
 			System.out.println(this.cartas[i]);
@@ -41,11 +56,14 @@ public class Mazo{
 
 	public static void main (String args[]){
 		Mazo mazo = new Mazo();
-		//mazo.imprimir();
 		System.out.println(mazo);
+		//System.out.println(mazo);
 		//JOptionPane.showMessageDialog(null, mazo);
-		mazo.imprimirNumero(41);
-		mazo.imprimirNumero(30);
+		//mazo.imprimirNumero(41);
+		//mazo.imprimirNumero(30);
+		mazo.revolver();
+		System.out.println("- - - - - - - - - - - - - - - - - - - - - - - ");
+		System.out.println(mazo);
 	}
 
 
